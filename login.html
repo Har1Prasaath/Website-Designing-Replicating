@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" type="images" href="https://upload.wikimedia.org/wikipedia/sco/d/d1/Ferrari-Logo.svg">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+        <div class="logo">
+            <img src="https://assets.stickpng.com/images/580b585b2edbce24c47b2c54.png" height="70px">
+        </div>
+        <br>
+      <h1 id="title"></h1>
+      <form>
+        <div class="input-group">
+          <div class="input-field" id="nameFieldContainer">
+            <i class="fa-solid fa-user" style="color: #000000;"></i>
+            <input type="text" placeholder="Name" id="nameField" required/>
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-envelope" style="color: #000000;"></i>
+            <input type="email" placeholder="Email" id="emailField" required />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-lock" style="color: #000000;"></i>
+            <input type="password" placeholder="Password" id="passwordField" required />
+          </div>
+          <div class="input-field">
+            <i class="fa-solid fa-phone" style="color: #000000;"></i>
+            <input type="tel" placeholder="Phone Number" id="phoneField" required />
+          </div>
+          <p><a href="#" id="forgotPasswordLink">Forgot password?</a></p>
+        </div>
+        <br><br>
+        <div class="button-field">
+          <button type="button" id="signUpButton">Sign Up</button>
+          <button type="button" class="disable" id="signInButton">Sign In</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let signUpButton = document.getElementById('signUpButton');
+    let signInButton = document.getElementById('signInButton');
+    let nameFieldContainer = document.getElementById('nameFieldContainer');
+    let nameField = document.getElementById('nameField');
+    let title = document.getElementById('title');
+    let emailField = document.getElementById('emailField');
+    let passwordField = document.getElementById('passwordField');
+    let forgotPasswordLink = document.getElementById('forgotPasswordLink');
+    let phoneField = document.getElementById('phoneField');
+  
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+    function isValidPassword(password) {
+    const minLength = 8;
+    const specialCharRegex = /[!@#$%^&*(),.?":{}|<>]/;
+    return password.length >= minLength && specialCharRegex.test(password);
+  }
+  
+function isValidPhoneNumber(phoneNumber) {
+  const phoneRegex = /^\d{10}$/; // Matches a 10-digit phone number
+  return phoneRegex.test(phoneNumber);
+}
+    signUpButton.addEventListener('click', function() {
+      nameFieldContainer.style.display = '';
+      title.textContent = 'New Customer';
+      signUpButton.classList.remove('disable');
+      signInButton.classList.add('disable');
+      if (!nameField.value || !emailField.value || !passwordField.value||!phoneField.value) {
+        alert('Please fill in all the fields.');
+      } else if (!isValidEmail(emailField.value)) {
+        alert('Please enter a valid email address.');
+      } 
+      else if (!isValidPassword(passwordField.value)) {
+      alert('Please valid password(8 characters and a special character)');
+      }
+      else if (!isValidPhoneNumber(phoneField.value)) {
+    alert('Please enter a valid phone number.');
+      }else {
+        alert('User successfully registered!');
+        window.location.href = 'main.html';
+      }
+    });
+  
+    signInButton.addEventListener('click', function() {
+      nameFieldContainer.style.display = 'none';
+      title.textContent = 'Registered Customer';
+      signUpButton.classList.add('disable');
+      signInButton.classList.remove('disable');
+      if (!emailField.value || !passwordField.value) {
+        alert('Please fill in all the fields.');
+      } else if (!isValidEmail(emailField.value)) {
+        alert('Please enter a valid email address.');
+      } 
+      else if (!isValidPassword(passwordField.value)) {
+      alert('Please valid password(8 characters and a special character)');
+      }
+      else if (!isValidPhoneNumber(phoneField.value)) {
+    alert('Please enter a valid phone number.');
+      }else {
+        alert('User successfully signed in!');
+        window.location.href = 'main.html';
+      }
+    });
+  
+    forgotPasswordLink.addEventListener('click', function() {
+      let email = prompt('Please enter your email:');
+      if (email) {
+        if (!isValidEmail(email)) {
+          alert('Please enter a valid email address.');
+        } else {
+          alert('Password reset email sent!');
+        }
+      } else {
+        alert('Please enter a valid email address.');
+      }
+    });
+  </script>
+</body>
+</html>
+
+

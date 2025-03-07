@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megacars</title>
+    <link rel="icon" type="images" href="https://upload.wikimedia.org/wikipedia/sco/d/d1/Ferrari-Logo.svg">
+</head>
+<link rel="stylesheet" href="https://fonts.google.com/specimen/Kanit?preview.text=current&preview.text_type=custom">
+<link rel="stylesheet" href="stylemegacars.css">
+<body>
+    
+    <div id="one">
+    <div style="margin-right: 10%;">
+        <table>
+            <tr>
+                <td style="width: 86.9%;"><a href="main.html"><img src="https://th.bing.com/th/id/R.a2636a7fa30bba163f082617a89f023c?rik=FmmK6nCgX329jw&riu=http%3a%2f%2fwallsev.com%2fwp-content%2fuploads%2f2013%2f11%2fferrari_logo.jpg&ehk=ZCeOk4dArBR9T%2bWXPkP%2fpHpWzE4sgVStDBCX5EnjOz0%3d&risl=&pid=ImgRaw&r=0"width="300" height="150"></a></td>
+                <td><button type="button" class="button1" style="border: 0; background-color:transparent;color: white; font-weight: bolder; cursor: pointer;">MEGACARS</td>
+                <td><a href="technology.html"><button class="button1" type="button" style="border: 0; background-color:transparent; color: white; font-weight: bolder; cursor: pointer;">TECHNOLOGY</button></a></td>
+               
+            </tr>
+        </table>
+    </div>        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              
+              <img src="https://th.bing.com/th/id/R.fda73906c76838f514ff82720bd181dc?rik=ezy0CKvrKME1Yw&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fm96tXAj.jpg&ehk=UTF2Xcczce8Jk5YM8U%2bg8DznAZCQauR0LIqmSxMsBD0%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img src="https://www.carscoops.com/wp-content/uploads/2017/12/AGERA-0-1024x555.jpg" style="width:100%">
+              
+            </div>
+            
+            <div class="mySlides fade">
+              
+              <img src="https://4kwallpapers.com/images/wallpapers/ferrari-sf90-stradale-hybrid-cars-sports-cars-black-2048x1536-1194.jpg" style="width:100%">
+              
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2100); // Change image every 2 seconds
+            }
+            </script>
+            <br>
+    
+    
+   
+
+    
+        <h1 id="onea">REMEMBERING THE PAST</h1>
+        
+    <div style="margin-left: 15%;">
+        <table id="currentable">
+            <tr>
+                <td id="ct"><a href="https://www.ferrari.com/en-EN/auto/512-bb"><img style="object-fit: contain;" class="zoomable-image" src="https://media.gettyimages.com/id/459233583/photo/ferrari-365-gt4-bb.jpg?s=612x612&w=0&k=20&c=eraDBLt7Xl9oDdRzcXd9DaSiNyCXWfqroFsV1e79wyM=" height="500"width="500"/></a><br>Ferrari-512-bb</td>
+                <td id="ct"><a href="https://www.ferrari.com/en-EN/history/garage/1962/250-gt-berlinetta-lusso"><img  style="object-fit: contain;" class="zoomable-image" src="https://media.gettyimages.com/id/534251830/photo/eric-claptons-1964-ferrari-250-gt-berlinetta-luso-2000.jpg?s=612x612&w=0&k=20&c=KcWxhbxQvVjpjCiu7FH2GQD8unrfIU0_-PRwCqMz-30="height="500"width="500"/></a><br>250 GT Lusso Berlinetta</td>
+
+                
+            </tr>
+            <tr>
+                <td id="ct"><a href="https://www.ferrari.com/en-EN/auto/166-mm"><img style="object-fit: contain;" class="zoomable-image" src="https://media.gettyimages.com/id/812408028/photo/chichester-england-30th-june-1950-ferrari-166mm-barchetta-driven-by-sally-mason-styrron-at.jpg?s=612x612&w=0&k=20&c=wI6Ee79MhaIwhn9LANF_VYqO8YHe4-i8JuCAJNuIbP4="height="500"width="500"/></a><br>Ferrari 166 MM Touring Barchetta</td>
+                <td id="ct"><a href="https://www.ferrari.com/en-EN/auto/250-california"><img style="object-fit: contain;"  class="zoomable-image" src="https://media.gettyimages.com/id/1072973636/photo/ferrari-250-gt-lwb-california-spider.jpg?s=612x612&w=0&k=20&c=17wII5x1nnPtevvoTMfoxaGJxM5qXm-zjTZngtLIx0Y="height="500"width="500"/></a><br>250 GT California Spyder LWB</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        
+    </div>
+
+
+
+
+    </div>
+    <div id="two">
+        <br>
+        <br>
+        <br>
+
+        <h1 id="twoa">LEGACY</h1>
+        
+        
+        <table id="cartable">
+            <tr>
+                <td id="cellcars"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-04/_DSC9564-2_0.jpg?h=242ab04d&itok=o6jw9Mxg" alt="cars"height="200px" width="520px"/></a></td>
+                <td id="cellcarsr"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-03/_DSC2893_0.jpg?h=0d60ab88&itok=frlNyYs0" alt="cars"height="200px" width="520px"/></a></td>
+                
+            </tr>
+            <tr>
+                <td id="cellcars"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-03/ONE1%20GARAGE_0.png?h=8f3d40f1&itok=z4bqWb_D" alt="cars"height="200px" width="520px"/></a></td>
+                <td id="cellcarsr"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-03/AGERA%20S%20HUNDRA.png?h=8f3d40f1&itok=lNX66hd0" alt="cars"height="200px" width="520px"/></a></td>
+                
+            </tr>
+            <tr>
+                <td id="cellcars"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-03/AGERA%20R%20LAKE.png?h=8f3d40f1&itok=L7EtSAnW" alt="cars"height="200px" width="520px"/></a></td>
+                <td id="cellcarsr"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-01/Agera.jpg?h=ef395871&itok=HHxzdbW8" alt="cars"height="200px" width="520px"/></a></td>
+                
+            </tr>
+            <tr>
+                <td id="cellcars"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-03/KenoZache_IMG_5958%20copy.png?h=4b0ca4eb&itok=s8a6wOvR" alt="cars"height="200px" width="520px"/></a></td>
+                <td id="cellcarsr"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-04/76-Oskar%20Bakke-Koenigsegg%20Car%20Week%202021-_DSC6272%202_0.jpg?h=ee0abec0&itok=qIdTR8OC" alt="cars"height="200px" width="520px"/></a></td>
+                
+            </tr>
+            <tr>
+                <td id="cellcars"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-04/ccgt1.jpg?h=97b19360&itok=xHe_xn_8" alt="cars"height="200px" width="520px"/></a></td>
+                <td id="cellcarsr"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-04/2018GhostSquad-Keno-14.jpg?h=12798a9f&itok=p0lY-8sP" alt="cars"height="200px" width="520px"/></a></td>
+                
+            </tr>
+            <tr>
+                <td id="cellcars"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-01/CC8S%20on%20the%20track_0.jpg?h=82f4586c&itok=6w2-wmc9" alt="cars"height="200px" width="520px"/></a></td>
+                <td id="cellcarsr"><a href="https://www.ferrari.com/en-IN/auto/ferrari-roma"><img class="zoomable-image" src="https://mainwebstorage.blob.core.windows.net/mediacontainers/styles/514x200/azure/2022-01/scan%209.jpeg?h=494e0106&itok=dHBDYajo" alt="cars"height="200px" width="520px"/></a></td>
+                
+            </tr>
+        </table>
+        
+
+
+
+    </div>
+    <div id="green">
+    <hr style="color: black; margin-left: 170px; margin-right: 8%;">
+<br><br><br><br>
+<div>
+    <p class="title2" style="margin-left: 270px; transform: scale(1.2,1);">THE</p>
+    <p class="title2" style="margin-left: 270px; transform: scale(1.2,1);">SHOW</p>
+    <p class="title2" style="margin-left: 270px; transform: scale(1.2,1);">MUST</p>
+    <p class="title2" style="margin-left: 270px; transform: scale(1.2,1);">GO ON</p>
+
+</div>
+<div style="margin-left: 50%; margin-top: -180px;">
+    <table style="height: 150px; font-family: sans-serif ;font-size: 17px">
+        <tr>
+            <td><a href="megacars.html" style="text-decoration: none;color: black;">Megacars</a> </td>
+        </tr>
+        <tr>
+            <td><a href="technology.html" style="text-decoration: none;color: black;">Technology</a></td>
+
+        </tr>
+        <tr>
+            <td>.</td>
+        </tr>
+    </table>
+</div>
+<div style="margin-left: 63%; margin-top: -145px; font-size: 16px; font-family: sans-serif ;">
+    <table style="height: 90px; width: 300px;">
+        <tr>
+            <td><a href="dealer.html" style="text-decoration: none;color: black;">Dealer locator</A></td>
+            <td><a href="contact.html " style="text-decoration: none;color: black;">Contact</a> </td>
+        </tr>
+        <tr>
+            <td><a href="shop.html" style="text-decoration: none;color: black;">Shop</A></td>
+
+            <td><a href="press.html"style="text-decoration: none;color: black;">Press</button></a></td>
+        </tr>   
+    </table>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<hr style="color: black; margin-left: 170px; margin-right: 8%;">
+<br><br><br>
+<div style="margin-left: 45%;">
+    <table style="width:170px;">
+        <tr>
+            <td><a href="https://www.instagram.com/ferrari/?hl=en" target="_blank"><img width="20px" src="https://cdn.icon-icons.com/icons2/791/PNG/512/instagram_f_icon-icons.com_65485.png"></a></td>
+            <td><a href="https://twitter.com/Ferrari" target="_blank"><img width="20px" src="https://cdn.icon-icons.com/icons2/791/PNG/512/TWITTER_icon-icons.com_65486.png"></a></td>
+            <td><a href="https://www.facebook.com/Ferrari/" target="_blank"><img width="20px" src="https://cdn.icon-icons.com/icons2/791/PNG/512/FB_icon-icons.com_65484.png"></a></td>
+            <td><a href="https://www.youtube.com/@Ferrari" target="_blank"><img width="20px" src="https://cdn.icon-icons.com/icons2/791/PNG/512/YOUTUBE_icon-icons.com_65487.png"></a></td>
+            <td><a href="https://www.linkedin.com/company/ferrari" target="_blank"><img width="20px" src="https://cdn.icon-icons.com/icons2/1458/PNG/512/linkedinlogokey_99649.png"></a></td>
+        </tr>
+    </table>
+</div>
+</div>
+</div>
+</body>
+
+</html>
